@@ -1,0 +1,14 @@
+npm_modules
+npm_modules/*
+node_modules
+node_modules/*
+.env
+logs/*
+logs
+examples/*
+examples
+fibodorresults.txt
+index.bkp.js
+index.js
+orig
+orig/*
