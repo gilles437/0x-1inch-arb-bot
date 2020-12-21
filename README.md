@@ -20,12 +20,19 @@ download the git repository using git clone and run:
 Copy the .env.example to .env and replace the following information with your addresses:
 
 RPC_URL="INFURA_URL"
+
 ADDRESS="0x...YOUR_ADDRESS"
+
 PRIVATE_KEY="0x...YOUR_PRIVATE_KEY"
+
 CONTRACT_ADDRESS="0x...YOUR_CONTRACT_ADDRESS"
+
 GAS_LIMIT=2000000
+
 GAS_PRICE=150
+
 ESTIMATED_GAS=470000
+
 POLLING_INTERVAL=500                                                                                                                                                                     
 
 npm install
