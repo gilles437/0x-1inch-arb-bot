@@ -20,20 +20,14 @@ download the git repository using git clone and run:
 Copy the .env.example to .env and replace the following information with your addresses:
 
 RPC_URL="INFURA_URL"
-
 ADDRESS="0x...YOUR_ADDRESS"
-
 PRIVATE_KEY="0x...YOUR_PRIVATE_KEY"
-
 CONTRACT_ADDRESS="0x...YOUR_CONTRACT_ADDRESS"
-
 GAS_LIMIT=2000000
-
 GAS_PRICE=150
-
 ESTIMATED_GAS=470000
-
 POLLING_INTERVAL=500                                                                                                                                                                     
+From the command line:
 
 npm install
 
@@ -41,8 +35,8 @@ node node arbitrage-bot-0x1inch.js
 
 If you want to add more arbitrage pairs, add these two lines after line 740 in arbitrage-bot-0x1inch.js, as many times as wanted:
 
-		console.log('WETH, UNI')
-    await checkOrderBook(WETH, UNI)  
+	console.log('WETH, UNI')
+    	await checkOrderBook(WETH, UNI)  
 
 With the tokens of your choice. Check that these tokens are defined in the ASSET SYMBOLS list in the same file.
 
