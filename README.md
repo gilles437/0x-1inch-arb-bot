@@ -15,23 +15,35 @@ WETH->UNI
 
 Tu run the bot:
 
-download the git repository using git clone and run:
+Download the git repository using git clone and do:
+
+Copy the file TradingBot.sol in Remix and deploy the contract using Injected Web3 option to the mainnet. 
+
+The address of the contract deployed will be used in the .env file explained below.
 
 Copy the .env.example to .env and replace the following information with your addresses:
 
 RPC_URL="INFURA_URL"
+
 ADDRESS="0x...YOUR_ADDRESS"
+
 PRIVATE_KEY="0x...YOUR_PRIVATE_KEY"
+
 CONTRACT_ADDRESS="0x...YOUR_CONTRACT_ADDRESS"
+
 GAS_LIMIT=2000000
+
 GAS_PRICE=150
+
 ESTIMATED_GAS=470000
+
 POLLING_INTERVAL=500                                                                                                                                                                     
 From the command line:
 
 npm install
 
 node node arbitrage-bot-0x1inch.js
+
 
 If you want to add more arbitrage pairs, add these two lines after line 740 in arbitrage-bot-0x1inch.js, as many times as wanted:
 
